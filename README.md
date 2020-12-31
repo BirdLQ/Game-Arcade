@@ -1,4 +1,4 @@
-# Game-Arcade: curses
+# Game-Arcade: Python curses game
 poorly written but it works
 
 clone the repo
