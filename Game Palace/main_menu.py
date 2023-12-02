@@ -1,8 +1,7 @@
-import curses, time, random, sys, win32console, locale, threading
-from pygame import mixer
+import curses, time, random, sys, threading
 
 #games
-from methods.menus import *
+from methods.menus import menu, quit_menu
 import rps
 import snake
 import leaderboard
@@ -10,31 +9,8 @@ import asciiAnimation
 import snow
 import xo
 
-#set encodage to utf-8
-locale.setlocale(locale.LC_ALL, '')
-
-#set window title
-win32console.SetConsoleTitle('Game Palace')
-
-#play music
-def music_player():
-    mixer.init()
-    mixer.music.load('music/theme3.mp3')
-    mixer.music.play(-1)
-
-th1 = threading.Thread(target = music_player)
-
-th1.start()
-
-
 '''
 TO ADD:
-
-exit full sceen to windowed
-    
-mixer.pause
-mixer.unpause
-mixer.set_volume(0.7)
 
 game name wave effect
 '''
